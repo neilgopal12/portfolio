@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--Font Awesome is a convenient library of icons. These icons are vector graphics, stored in the .svg file format. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
+
+You can add Font Awesome to any app just by including it by adding the following code to the top of your HTML:-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!--Welcome to Free Code Camp's first coding challenge.
+
+You can edit code in your text editor, which we've embedded into this web page.
+
+Do you see the code in your text editor that says <h1>Hello</h1>? That's an HTML element.
+
+Most HTML elements have an opening tag and a closing tag.
+
+Opening tags look like this:
+
+<h1>
+
+Closing tags look like this:
+
+</h1>
+
+Note that the only difference between opening tags and closing tags is that closing tags have a slash after their opening angle bracket.
+
+Each challenge has tests that you can run at any time by clicking the "Run tests" button. Once you get all tests passing, you can advance to the next challenge.
+
+To pass the test on this challenge, change your h1 element's text to say "Hello World" instead of "Hello". Then click the "Run tests" button. -->
+<!--<h1>Hello World</h1>
+
+<h2>CatPhotoApp</h2>
+
+<p>Hello Paragraph</p>-->
+<!--Commenting is a way that you can leave comments within your code without affecting the code itself.
+
+Commenting is also a convenient way to make code inactive without having to delete it entirely.
+
+You can start a comment with-->
+<!-- and end a comment with -->
+
+<!--Uncomment your h1, h2 and p elements-->
+<!--Remember that in order to start a comment,-->
+<!--you need to use--> <!-- and to end a comment, you need to use -->
+<!--Here you'll need to end the comment before your h2 element begins.
+
+Comment out your h1 element and your p element, but leave your h2 element uncommented.-->
+
+<!--
+<h1>Hello World</h1>
+-->
+<!--Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name Responsive Design.
+
+With responsive design, there is no need to design a mobile version of your website. It will look good on devices with screens of any width.
+
+You can add Bootstrap to any app by adding the link atop here to the top of your own HTML:-->
+
+<!--
+
+To get started, we should nest all of our HTML in a div element with the class container-fluid.-->
+<!--Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<!--Three important properties control the space that surrounds each HTML element: padding, margin, and border.
+
+An element's padding controls the amount of space between the element and its border.
+An element's margin controls the amount of space between an element's border and surrounding elements. If you set an element's margin to a negative value, the element will grow larger.
+-->
+<style>
+.thick-green-border{
+	border-color: green;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 50%;
+	padding:0;
+}
+
+h2{
+	font-family: Lobster;
+}
+</style>
+<!--Now that we're using Bootstrap, we can center our heading element to make it look better. All we need to do is add the class text-center to our h2 element.
+
+Remember that you can add several classes to the same element by separating each of them with a space-->
+<div class="container-fluid">
+<!--the col-md-* class: md means medium, and * is a number specifying how many columns wide the element should be. In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.
+col-xs-*, where xs means extra small (like an extra-small mobile phone screen), and * is the number of columns specifying how many columns wide the element should be.
+-->
+<div class="row">
+<div class="col-xs-8">
+<h2 class="text-primary text-center">CatPhotoApp</h2>
+</div>
+<!--<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+<p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>-->
+<!--You can make elements into links by nesting them within an a element.-->
+<div class="col-xs-4">
+  <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+  </div>
+</div>
+  <img class="img-responsive" src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera. "/>
+<!--Normally, your button elements with a class of btn are only as wide as the text that they contain.
+By making them block elements with the additional class of btn-block, your button will stretch to fill your page's entire horizontal space and any elements following it will flow onto a "new line" below the block.
+The btn-primary class is the main color you'll use in your app. It is useful for highlighting actions you want your user to take.
+Bootstrap comes with several pre-defined colors for buttons. The btn-info class is used to call attention to optional actions that the user can take.
+Bootstrap comes with several pre-defined colors for buttons. The btn-danger class is the button color you'll use to notify users that the button performs a destructive action.
+Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.
+We can clean up our code and make our Cat Photo App look more conventional by using Bootstrap's built-in styles instead of the custom styles we created earlier.-->
+<!--You can use spans to create inline elements. By using the span element, you can put several elements together, and even style different parts of the same element differently.
+-->
+<div class="row">
+<div class="col-xs-4">
+<button class="btn btn-primary btn-block"><i class="fa fa-thumbs-up"></i>Like</button>
+</div>
+<div class="col-xs-4">
+<button class="btn btn-info btn-block"><i class="fa fa-info-circle"></i>Info</button>
+</div>
+<div class="col-xs-4">
+<button class="btn btn-danger btn-block"><i class="fa fa-trash"></i>Delete</button>
+</div>
+</div>
+<div class="silver-background">
+<p>Things cats <span class="text-danger">love:</span></p>
+<ul>
+<li>milk</li>
+<li>cats</li>
+<li>people</li>
+</ul>
+<p>Things cats hate</p>
+<ol>
+<li>dogs</li>
+<li>mice</li>
+<li>rats</li>
+</ol>
+</div>
+<!--You can use radio buttons for questions where you want the user to only give you one answer.
+
+Radio buttons are a type of input
+
+Each of your radio buttons should be nested within its own label element.
+
+All related radio buttons should have the same name attribute.
+You can use Bootstrap's col-xs-* classes on form elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.-->
+<form action="/submit-cat-photo" id="cat-photo-form">
+<div class="row">
+<div class="col-xs-6">
+<label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+</div>
+<div class="col-xs-6">
+<label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+</div>
+</div>
+<!--Forms commonly use checkboxes for questions that may have more than one answer.
+
+Checkboxes are a type of input
+
+Each of your checkboxes should be nested within its own label element.
+
+All related checkbox inputs should have the same name attribute.-->
+<div class="row">
+<div class="col-xs-4">
+<label><input type="checkbox" name="personality">Committed</label>
+</div>
+<div class="col-xs-4">
+<label><input type="checkbox" name="personality">Cooperative</label>
+</div>
+<div class="col-xs-4">
+<label><input type="checkbox" name="personality" checked>Responsible</label>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-7">
+<input type="text" class="form-control" placeholder="this is placeholder text" required>
+</div>
+<!--You can add the fa-paper-plane Font Awesome icon by adding <i class="fa fa-paper-plane"></i> within your submit button element.
+Now let's get your form input and your submission button on the same line. We'll do this the same way we have previously: by using a div element with the class row, and other div elements within it using the col-xs-* class.-->
+<div class="col-xs-5">
+<button type="submit" class="btn btn-primary"> <i class="fa fa-paper-plane"></i>Submit</button>
+</div>
+</div>
+</form>
+<!--The div element, also known as a division element, is a general purpose container for other elements.
+The div element is probably the most commonly used HTML element of all. It's useful for passing the CSS of its own class declarations down to all the elements that it contains.-->
+</div>
+</html>
